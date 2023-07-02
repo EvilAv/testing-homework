@@ -7,8 +7,8 @@ import { Provider } from 'react-redux';
 
 import { ExampleApi, CartApi } from '../../src/client/api';
 import { addToCart, clearCart, initStore, checkout, checkoutComplete } from '../../src/client/store';
-import { Cart } from '../../src/client/pages/Cart'
-import { Form } from '../../src/client/components/Form';
+import { Form } from '../../src/client/components/Form'
+import { Application } from '../../src/client/Application';
 import { addTestItems, enterCorrectData, testCorrectForm, testProduct } from './utils';
 import userEvent from '@testing-library/user-event'
 
@@ -67,20 +67,18 @@ describe('Действия в корзине',() => {
     //     const app = (
     //         <BrowserRouter basename={basename}>
     //             <Provider store={store}>
-    //                 <Cart/>
+    //                 <Application/>
     //             </Provider>
     //         </BrowserRouter>
     //     );
 
     //     const { container } = render(app);
-    //     console.log(container.outerHTML);
+    //     //console.log(container.outerHTML);
 
         
-    //     console.log(store.getState());
+    //     //console.log(store.getState());
 
-    //     // console.log(res);
 
-    //     //expect(res).not.toContain('is-invalid');
 
     // });
 });
